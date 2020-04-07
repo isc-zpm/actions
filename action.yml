@@ -1,0 +1,18 @@
+name: Test ZPM package
+description: Test ZPM package
+inputs:
+  verbose:
+    description: Verbose output
+    required: false
+    default: '0'
+  test:
+    description: Test package with zpm
+    required: false
+    default: '1'
+  verify:
+    description: Verify package with zpm
+    required: false
+    default: '1'
+runs:
+  using: docker
+  image: Dockerfile
